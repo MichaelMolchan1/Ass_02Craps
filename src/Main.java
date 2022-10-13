@@ -22,7 +22,6 @@ public class Main
             //First Rolls
             die1 = rnd.nextInt(6)+ 1;
             die2 = rnd.nextInt(6)+ 1;
-            done1 = false;
             firstDiceSum = die1 + die2;
             System.out.println("die one is " + die1 + " die two is " + die2 + " the total is " + firstDiceSum);
             if (firstDiceSum == 2)
@@ -51,7 +50,7 @@ public class Main
             }
 
             //Dice rolls past the first two
-            if (done1 == false)
+            if (!done1)
             {
                 do {
                     die1 = rnd.nextInt(6)+ 1;
